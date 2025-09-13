@@ -13,3 +13,17 @@ This repo deploys [LibreBooking](https://github.com/LibreBooking/app) to [Render
 
 ## 🔑 Environment Variables (if manual setup)
 
+DB_HOST=<your-db-host>
+DB_PORT=<your-db-port>
+DB_NAME=<your-db-name>
+DB_USER=<your-db-user>
+DB_PASS=<your-db-pass>
+APP_ENV=production
+
+
+## ✅ After Deployment
+- Visit your app URL (e.g., https://librebooking.onrender.com).
+- Run the LibreBooking web installer.
+- Enter DB credentials from Render.
+- Create admin account.
+- Done 🎉
