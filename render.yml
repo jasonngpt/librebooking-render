@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: librebooking
+    env: docker
+    plan: starter
+    region: singapore
+    envVars:
+      - key: DB_HOST
+        fromDatabase:
+          name: librebooking-db
+          property: host
+      - key: DB_PORT
+        fromDatabase:
+          name: librebooking-db
+          property: port
+      - key: DB_NAME
+        fromDatabase:
+          name: librebooking-db
+          property: database
+      - key: DB_USER
+        fromDatabase:
+          name: librebooking-db
+          property: user
+      - key: DB_PASS
+        fromDatabase:
+          name: librebooking-db
+          property: password
+
+databases:
+  - name: librebooking-db
+    databaseName: librebooking
+    plan: starter
+    region: singapore
